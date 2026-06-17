@@ -1,6 +1,7 @@
 {
     "jupyter-lite-schema-version": 0,
     "jupyter-config-data": {
+      "defaultUrl": "/lab/tree/transform_to_base_link.ipynb",
       "disabledExtensions": [
         "@jupyterlab/drawio-extension",
         "jupyterlab-kernel-spy",
@@ -8,4 +9,3 @@
       ]
     }
   }
-  
