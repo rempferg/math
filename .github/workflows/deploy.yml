@@ -25,7 +25,7 @@ jobs:
         run: |
           cp README.md content
           jupyter lite build --contents content --output-dir dist
-          printf '<!DOCTYPE html>\n<html>\n<head>\n<meta http-equiv="refresh" content="0; URL=./lab/index.html?path=transform_to_base_link.ipynb">\n</head>\n</html>\n' > dist/index.html
+          python3 .github/scripts/patch_default_notebook.py
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
